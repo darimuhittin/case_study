@@ -1,5 +1,48 @@
 @media screen and (max-width: 1024px) {
-    .navbarMiddle {
+    .sm_hide {
         display: none !important;
     }
+}
+
+.hiddenMenu{
+    position: absolute;
+    left: 26.25%;
+    right: 0%;
+    top: 0.07%;
+
+    background: #FFFFFF;
+    box-shadow: 0px 0px 32px rgba(136, 152, 170, 0.15);
+}
+
+.hiddenMenuLink{
+    margin-bottom: 32px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+
+    /* identical to box height, or 136% */
+
+    color: #505D68;
+
+    mix-blend-mode: normal;
+    opacity: 0.5;
+}
+
+.bookButton{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+
+    /* identical to box height */
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #424B5A;
+    padding:  13px 42px;
+    border: 1px solid;
+    border-radius: 4px;
 }

@@ -6,7 +6,7 @@ import Footer from './components/footer';
 
 function App() {
   return (
-    <main style={{ backgroundColor:"#F2F5F7",height:"100vh",overflow:"auto" }}>
+    <main className="container" style={{ backgroundColor:"#F2F5F7",height:"100vh",overflow:"auto"  ,position:"relative" }}>
       <Header/>
       <FlightsPage/>
       <Footer/>
