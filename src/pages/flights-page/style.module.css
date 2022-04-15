@@ -1,0 +1,41 @@
+.container{
+    padding: 30px 15px;
+}
+.headingText{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+
+    /* or 133% */
+    text-align: center;
+    margin-top: 30px;
+
+    color: #505D68;
+}
+
+.littleText{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #505D68;
+}
+
+.nextButton{
+    padding: 13px 20px;
+    margin: 32px;
+    background: #605DEC;
+    border: 1px solid #605DEC;
+    box-sizing: border-box;
+    border-radius: 4px;
+    color: #fff;
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 21px;
+}

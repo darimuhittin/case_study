@@ -1,0 +1,46 @@
+.logo{
+    margin-top: 24px;
+}
+
+.text{
+    margin-top: 17px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+
+    /* or 150% */
+    text-align: center;
+
+    color: #505D68;
+}
+
+.divider{
+    width: 60%;
+    margin-top: 48px;
+    height: 1px;
+    color: #C2D1D9;
+}
+
+.links-container{
+    padding:0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.links-container>a{
+    margin-top:48px;
+    text-decoration: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+
+    /* identical to box height */
+    text-align: center;
+    text-transform: uppercase;
+    color: #505D68;
+}
