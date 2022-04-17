@@ -1,6 +1,20 @@
 .container{
     padding: 30px 15px;
 }
+
+@media screen and (min-width: 768px) {
+    .container{
+        padding: 44px 150px;
+    }
+    .headingText{
+        text-align: start !important;
+    }
+    .bigTable{
+        background-color: #fff;
+        padding: 16px;
+    }
+}
+    
 .headingText{
     font-family: 'Roboto';
     font-style: normal;

@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from "./style.module.css"
 import planeImg from "../../assets/plane-circle-check-solid-01.png"
-const TourCard = () => {
+const TourCardMobile = () => {
   return (
     <div className={styles.card}>
         <div style={{ display:"flex",}}>
@@ -26,4 +26,4 @@ const TourCard = () => {
   )
 }
 
-export default TourCard
+export default TourCardMobile
