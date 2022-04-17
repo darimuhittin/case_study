@@ -12,7 +12,7 @@ function App() {
       <Header/>
       <BrowserRouter>
         <Routes>
-        <Route path="/" element={<FlightsPage/>}/>
+          <Route path="/" element={<FlightsPage/>}/>
           <Route path="/result" element={<ResultPage/>}/>
         </Routes>
       </BrowserRouter>

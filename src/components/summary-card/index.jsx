@@ -3,7 +3,7 @@ import styles from "./style.module.css"
 import planeImg from "../../assets/plane-circle-check-solid-01.png"
 const SummaryCard = () => {
   return (
-      <>
+      <div className={styles.container}>
     <div className={styles.card}>
         <img src={planeImg} alt="plane" width={40} height={40} />
         <span className={styles.blackText} style={{ marginTop:16 }}>Hawaiian Airlines</span>
@@ -25,7 +25,7 @@ const SummaryCard = () => {
                 <span style={{ marginTop:8 }}>$503</span>
             </div>
         </div>
-    </>
+    </div>
   )
 }
 

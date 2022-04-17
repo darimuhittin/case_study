@@ -1,0 +1,16 @@
+.container{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #E9E8FC;
+}
+
+
+.textContainer{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.img{
+    margin: 14px;
+}

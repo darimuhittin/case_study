@@ -2,7 +2,7 @@
     padding: 30px 15px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
     .container{
         padding: 44px 150px;
     }
@@ -12,6 +12,15 @@
     .bigTable{
         background-color: #fff;
         padding: 16px;
+    }
+    .littleText{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 28px;
+
+        color: #505D68;
     }
 }
     
@@ -52,4 +61,8 @@ font-style: normal;
 font-weight: 400;
 font-size: 18px;
 line-height: 21px;
+}
+
+.bigTable{
+    flex:1
 }

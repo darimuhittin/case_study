@@ -1,3 +1,16 @@
+@media screen and (min-width:1024px) {
+    .container{
+        margin: 0 38px;
+    }
+    .card{
+        align-items: flex-end !important;
+        padding-right: 17px !important;
+    }
+    .priceSummaryContainer{
+        align-items: flex-end !important;
+    }
+}
+
 .card{
     background: #FFFFFF;
     border: 1px solid #E9E8FC;

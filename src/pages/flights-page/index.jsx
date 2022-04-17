@@ -12,7 +12,7 @@ const FlightsPage = () => {
     <div className={styles.container}>
     <h1 className={styles.headingText}>First class travel at economy prices</h1>
     <p className={styles.littleText}>Select a tour that suits you below.</p>
-    {size.width < 768 ?
+    {size.width < 1024 ?
     (
       <>
       <div>
@@ -28,16 +28,27 @@ const FlightsPage = () => {
       </div>
       </>
       ):(
-        <>
+        <div style={{ display:"flex" }}>
         <div className={styles.bigTable}>
+          <TourCardDesktop/>
+          <TourCardDesktop/>
+          <TourCardDesktop/>
+          <TourCardDesktop/>
+          <TourCardDesktop/>
+          <TourCardDesktop/>
           <TourCardDesktop/>
           <TourCardDesktop/>
           <TourCardDesktop/>
         </div>
         <div>
-
+          <SummaryCard/>
+          <div style={{ display:"flex",justifyContent:"end" }}>
+            <Link to={`/result`} className={styles.link}>
+              <button className={ styles.nextButton}>Next</button>
+            </Link>
+          </div>
         </div>
-        </>)}
+        </div>)}
     </div>
   )
 }
