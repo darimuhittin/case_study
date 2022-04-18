@@ -1,0 +1,58 @@
+.container{
+    padding: 30px 15px;
+    min-height: 140vh;
+    position: relative;
+    width: 100%;
+}
+
+.successMessage{
+    display: flex;
+    color: #007B65;
+    padding: 22px;
+    background-color: #EAFFFB;
+    border: 1px solid #007B65;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+
+.failMessage{
+    display: flex;
+    color: #A40000;
+    padding: 22px;
+    background-color: #FDEFEF;
+    border: 1px solid #A40000;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+
+.luggage{
+    position: absolute;
+
+    width: 75%;
+    right: 12.5%;
+    top:25%;
+}
+
+.astronaut{
+  
+    position: absolute;
+
+    width: 75%;
+    right: 12.5%;
+    top:25%;
+}
+
+@media screen and (min-width:1024px) {
+    .luggage{
+        width: 50%;
+        right:25%;
+        top:25%;
+    }
+    .astronaut{
+        width: 50%;
+        right:25%;
+        top:25%;
+    }
+}

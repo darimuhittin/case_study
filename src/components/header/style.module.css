@@ -2,10 +2,17 @@
     .sm_hide {
         display: none !important;
     }
+    .openMenuIcon {
+        display: block !important;
+    }
 }
 
+.openMenuIcon{
+    display: none;
+}
 .hiddenMenu{
     position: absolute;
+    z-index: 150;
     left: 26.25%;
     right: 0%;
     top: 0.07%;

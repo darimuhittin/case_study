@@ -1,10 +1,28 @@
 .container{
     padding: 30px 15px;
+    min-height: 140vh;
+}
+.littleContainer{
+    display: flex;
+    flex-direction: column;
+    z-index: 40;
+}
+
+@media screen and (min-width: 1400px){
+    .littleContainer{
+        flex-direction: row !important; 
+    }
+
 }
 
 @media screen and (min-width: 1024px) {
+
+    .form{
+        width: 488px !important;
+    }
     .container{
         padding: 44px 150px;
+        background-image: "../../assets/plane.png";
     }
     .headingText{
         text-align: start !important;
@@ -64,5 +82,74 @@ line-height: 21px;
 }
 
 .bigTable{
-    flex:1
+    z-index: 50;
+    min-width: 70%;
+}
+
+.form{
+    padding: 40px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.form input{
+    width: 100%;
+}
+.form input.valid{
+    margin:6px 0px;
+    padding: 8px 12px;
+    border: 1px solid rgba(80, 93, 104, 0.2);
+    border-radius: 4px;
+}
+
+.form input.error{
+    margin:6px 0px;
+    padding: 8px 12px;
+    border: 2px solid #A40000;
+    background-color: #FDEFEF;
+    border-radius: 4px;
+}
+
+.eyeIcon{
+    position: absolute;
+    right: 10px;
+    transform: translateY(70%);
+}
+.formHeader{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+
+    color: #505D68;
+
+    margin: 0;
+}
+
+.errorText{
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+
+    color: #A40000;
+}
+
+.submitButton{
+    background-color: #605DEC;
+    padding: 13.5px 20px;
+    margin-top: 24px;
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 21px;  
+border-radius: 4px;
+
+color: #FAFAFA;
 }

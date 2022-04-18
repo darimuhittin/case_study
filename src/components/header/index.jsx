@@ -3,6 +3,7 @@ import logo from '../../assets/logo.svg'
 import iconMenu from '../../assets/icon-menu.svg'
 import styles from "./style.module.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { Link } from 'react-router-dom'
 const Header = () => {
     const [showHiddenMenu,setShowHiddenMenu] = React.useState(false);
     const hiddenMenuRef = React.useRef(null);
@@ -35,11 +36,11 @@ const Header = () => {
             </ul>
         </div>
         <div className={styles.sm_hide}>
-            <button style={{ paddingLeft:42,paddingRight:42,paddingTop:13,paddingBottom:13 }}>
+            <button style={{ paddingLeft:42,paddingRight:42,paddingTop:13,paddingBottom:13,border:"1px solid",borderRadius:4 ,marginRight:135}}>
                 BOOK NOW
             </button>
         </div>
-        <div>
+        <div className={styles.openMenuIcon}>
             <button onClick={()=>{setShowHiddenMenu(old=>!old)}}>
                 <img src={iconMenu} alt="" width={24} height={24}/>
             </button>

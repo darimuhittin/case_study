@@ -2,12 +2,13 @@
     display: flex;
     align-items: center;
     border-bottom: 1px solid #E9E8FC;
+    padding-right: 32px;
 }
 
 
 .textContainer{
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     width: 100%;
 }
 

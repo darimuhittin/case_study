@@ -1,6 +1,8 @@
-@media screen and (min-width:1024px) {
+@media screen and (min-width:1400px) {
     .container{
-        margin: 0 38px;
+        margin: 0 38px !important;
+        width: 100%;
+        
     }
     .card{
         align-items: flex-end !important;
@@ -10,8 +12,14 @@
         align-items: flex-end !important;
     }
 }
+.container{
+    z-index: 100;
+    position: relative;
+    margin-top: 40px;
 
+}
 .card{
+    z-index: 50;
     background: #FFFFFF;
     border: 1px solid #E9E8FC;
     box-sizing: border-box;
@@ -29,7 +37,7 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
-
+    z-index: 50;
 
     color: #000000;
 
@@ -42,7 +50,7 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
-
+    z-index: 50;
 
     color: #605DEC;
 
@@ -52,6 +60,7 @@
 .priceSummaryContainer{
     display: flex;
     flex-direction: column;
+    z-index: 50;
 }
 
 .summaryContainer{
@@ -64,4 +73,5 @@
     /* identical to box height */
     display: flex;
     align-items: center;
+    z-index: 50;
 }

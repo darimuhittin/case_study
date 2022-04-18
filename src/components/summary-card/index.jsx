@@ -1,16 +1,19 @@
 import React from 'react'
 import styles from "./style.module.css"
 import planeImg from "../../assets/plane-circle-check-solid-01.png"
-const SummaryCard = () => {
+import { faLeftRight } from '@fortawesome/free-solid-svg-icons'
+const SummaryCard = (props) => {
+    const {flight} = props
+    console.log(flight);
   return (
       <div className={styles.container}>
     <div className={styles.card}>
         <img src={planeImg} alt="plane" width={40} height={40} />
-        <span className={styles.blackText} style={{ marginTop:16 }}>Hawaiian Airlines</span>
-        <span className={styles.grayText} style={{ marginTop:4 }}>FIG4312</span>
-        <span className={styles.blackText} style={{ marginTop:16 }}>16h 45m (+1d)</span>
-        <span className={styles.blackText} style={{ marginTop:8 }}>7:00 AM - 4:15 PM</span>
-        <span className={styles.grayText} style={{ marginTop:8 }}>2h 45m in HNL</span>
+        <span className={styles.blackText} style={{ marginTop:16 }}>{flight.airline}</span>
+        <span className={styles.grayText} style={{ marginTop:4 }}>{flight.flight_number}</span>
+        <span className={styles.blackText} style={{ marginTop:16 }}>{flight.duration}</span>
+        <span className={styles.blackText} style={{ marginTop:8 }}>{flight.departure_time} - {flight.arrival_time}</span>
+        <span className={styles.grayText} style={{ marginTop:8 }}>{flight.stop_detail}</span>
     </div>
 
         <div className={styles.summaryContainer} style={{ display:"flex",justifyContent:"center",marginTop:24 }}>
@@ -20,9 +23,9 @@ const SummaryCard = () => {
                 <span  style={{ marginTop:8 }}>Total</span>
             </div>
             <div className={styles.priceSummaryContainer} style={{ marginLeft:32 }}>
-                <span>$503</span>
-                <span style={{ marginTop:8 }}>$503</span>
-                <span style={{ marginTop:8 }}>$503</span>
+                <span>{flight.price.subTotal}</span>
+                <span style={{ marginTop:8 }}>{flight.price.fees}</span>
+                <span style={{ marginTop:8 }}>{flight.price.total}</span>
             </div>
         </div>
     </div>
